@@ -1,0 +1,65 @@
+{
+  "Routes": [
+    {
+      //Downstream
+      "DownstreamPathTemplate": "/api/Product",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "shashank-product-api.azurewebsites.net",//localhost
+          "Port": 443
+          //5062
+
+        }
+      ],
+      //Upstream
+      "UpstreamPathTemplate": "/api/ProductfromOcelot",
+      "UpstreamHttpMethod": [ "Get", "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/register",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "shashank-auth-api.azurewebsites.net", //localhost
+          "Port": 443
+          //5194
+        }
+      ],
+      //Upstream
+      "UpstreamPathTemplate": "/register",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/register-admin",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "shashank-auth-api.azurewebsites.net", //localhost
+          "Port": 443
+          //5194
+        }
+      ],
+      //Upstream
+      "UpstreamPathTemplate": "/register-admin",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/login",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "shashank-auth-api.azurewebsites.net", //localhost
+          "Port": 443
+          //5194
+        }
+      ],
+      //Upstream
+      "UpstreamPathTemplate": "/login",
+      "UpstreamHttpMethod": [ "Post" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:3000"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\assignments\\aspnetapp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{277DBC0A-8495-45CE-B5B2-C6CE62C5AE6C}|aspnetapp\\aspnetapp.csproj|d:\\assignments\\aspnetapp\\aspnetapp\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{277DBC0A-8495-45CE-B5B2-C6CE62C5AE6C}|aspnetapp\\aspnetapp.csproj|solutionrelative:aspnetapp\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\assignments\\aspnetapp\\aspnetapp\\Dockerfile",
+              "RelativeDocumentMoniker": "aspnetapp\\Dockerfile",
+              "ToolTip": "D:\\assignments\\aspnetapp\\aspnetapp\\Dockerfile",
+              "RelativeToolTip": "aspnetapp\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-20T08:18:36.035Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

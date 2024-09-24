@@ -1,0 +1,6 @@
+@Basic_auth_practice_HostAddress = http://localhost:5234
+
+GET {{Basic_auth_practice_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

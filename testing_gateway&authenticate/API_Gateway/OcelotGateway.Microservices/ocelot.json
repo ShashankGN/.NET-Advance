@@ -1,0 +1,69 @@
+{
+  "Routes": [
+    {
+      //Downstream
+      "DownstreamPathTemplate": "/api/Product/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+
+      //Upstream
+      "UpstreamPathTemplate": "/api/ProductfromOcelot/{id}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+
+    },
+    {
+      //Downstream
+      "DownstreamPathTemplate": "/api/Auth/Authenticate",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5259
+        }
+      ],
+
+      //Upstream
+      "UpstreamPathTemplate": "/Auth",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    // {
+    //Downstream
+    //"DownstreamPathTemplate": "/api/Product/{id}",
+    //"DownstreamScheme": "http",
+    //"DownstreamHostAndPorts": [
+    //  {
+    //    "Host": "localhost",
+    //    "Port": 5000
+    //  }
+    //],
+
+    ////Upstream
+    //"UpstreamPathTemplate": "/api/ProductfromOcelot/{id}",
+    //"UpstreamHttpMethod": [ "Put", "Delete" ]
+    // },
+    {
+      //Downstream
+      "DownstreamPathTemplate": "/api/Order",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+
+      //Upstream
+      "UpstreamPathTemplate": "/api/OrderfromOcelot",
+      "UpstreamHttpMethod": [ "Get" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:3000"
+  }
+
+}

@@ -1,0 +1,11 @@
+1.create a web api project without the controller and install the ocelot package in it.
+2.create a ocelot.json file in the same.
+3.In the program.cs add the basepath of the ocelot file.
+4.Register the ocelot in program.cs
+5.Add the ocelet in the pipeline.
+6.we should add the base URL in global configuration in ocelot.json file so that the URL will be the entry point of the requests from the client or user.
+7.make sure the added URL in global configuration is same as the URL one mentioned in the launchsettings of the ocelot project.
+8.in the ocelot.json we need to add the downstream and upstream paths so that the api paths are routed to the API_Gateway.
+9.add the downstreampathtemplate which is the path of the microservice running solely mention the host and port separately in downstreamhostsandport.
+10.in the upstreampathtemplate specify the path which will be used to access from the userend or client end.
+11.in the upstreamhttpmethod specify the Requests(PUT,GET,DELETE,POST) which can be accessed from the API_gateway.

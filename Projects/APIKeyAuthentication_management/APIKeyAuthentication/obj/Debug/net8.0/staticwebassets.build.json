@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "aOgBQGyTVE5tPLy9vs3E6mWbM0Y5l1RntDsZFvOXj8E=",
+  "Source": "APIKeyAuthentication",
+  "BasePath": "_content/APIKeyAuthentication",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
